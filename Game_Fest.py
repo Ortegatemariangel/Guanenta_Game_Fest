@@ -6,7 +6,7 @@ pygame.init()
 
 ANCHO, ALTO = 600, 600
 ventana = pygame.display.set_mode((ANCHO, ALTO))
-pygame.display.set_caption("Golf fest camp1")
+pygame.display.set_caption("Golf ¡Encuentra el hoyo!")
 
 # Colores
 VERDE_CESPED = (142, 199, 57)
@@ -27,7 +27,10 @@ hoyo_y = 160
 hoyo_radio = 10
 victoria = False
 
-# Fondo y escena
+# Velocidad de la pelota
+velocidad = 5
+
+# Fondo 
 def fondo():
     ventana.fill(VERDE_OSCURO)
     pygame.draw.rect(ventana, VERDE_CESPED, (30, 70, 540, 500))
@@ -80,11 +83,25 @@ def fondo():
 
 # Bucle
 reloj = pygame.time.Clock()
+jugador_x, jugador_y = pelota_x, pelota_y # Definir las coordenadas iniciales de la pelota
 while True:
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+
+    teclas = pygame.key.get_pressed()
+    if teclas[pygame.K_LEFT]:
+        jugador_x -= velocidad
+    if teclas[pygame.K_RIGHT]:
+        jugador_x += velocidad
+    if teclas[pygame.K_UP]:
+        jugador_y -= velocidad
+    if teclas[pygame.K_DOWN]:
+        jugador_y += velocidad
+    
+    # Actualizamos la posición de la pelota
+    pelota_x, pelota_y = jugador_x, jugador_y
 
     fondo()
     pygame.display.flip()
