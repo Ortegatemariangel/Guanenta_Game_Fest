@@ -16,7 +16,11 @@ Para disfrutar plenamente de la funcionalidad de nuestro juego, es importante an
 Este juego consta de 2 niveles que deberas pasar superando los obstáculos y llegando hasta el hoyo.
 
 #### Primer Nivel
-- El primer nivel consta de un campo en medio del agua, el mayor obstáculo en este campo es lograr pasarlo sin que la pelota toque el agua.
+- El primer nivel consta de un campo en medio del agua, el mayor obstáculo en este campo es lograr pasarlo sin que la pelota toque el agua, tambièn te encontraràs con arboles que rebotaràn tu pelota con el fin de no dejarte llegar a la meta y con arena reductora de velocidad.
+
+![campo1](campo1.jpg)
 
 #### Segundo Nivel
-- Si lograste pasar el nivel anterior, este realmente es más sencillo, solo debes pasar los árboles y llegar hasta el hoyo.
+- Si lograste pasar el nivel anterior, este realmente es más sencillo, solo debes pasar los árboles que haràn que tu pelota rebote, posterior al rebote desapareceran haciendo que el camino se despeje y sea màs fàcil con cada tiro dado llegar hasta el hoyo.
+
+![campo2](campo2.jpg)
